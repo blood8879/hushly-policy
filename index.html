@@ -48,7 +48,7 @@
 <main>
 <header>
   <h1>Hushly Privacy Policy</h1>
-  <div class="muted">Last updated: 2026-04-24</div>
+  <div class="muted">Last updated: 2026-09-23</div>
 </header>
 
 <p>Hushly (&ldquo;we&rdquo;, &ldquo;our&rdquo;) is a free Android application offering sleep and focus sounds. This policy explains what data the app collects and how it is used.</p>
@@ -57,15 +57,18 @@
 <p>Hushly is intended for users 13 years of age or older (parents and adults). It is <strong>not</strong> directed at children under 13. Although the app includes lullaby sounds parents may play for their children, the app itself is operated by an adult user.</p>
 
 <h2>2. Data the app collects directly</h2>
-<p>Hushly itself does not collect, transmit, or store personally identifying information on any server we operate.</p>
+<p>Hushly does not ask you to create an account or provide a name, email address, or payment information. We do not operate a server that stores your listening history. The third-party services below receive app and device data.</p>
 <p>The following data is stored only on the user&rsquo;s device via Android SharedPreferences:</p>
 <ul>
   <li>Favorite and recently-played sound IDs</li>
   <li>Onboarding completion flag</li>
 </ul>
-<p>This data never leaves the device and is deleted when the app is uninstalled.</p>
+<p>These local preferences are not sent by Hushly to our server and are deleted when the app is uninstalled. Playback events described below are separately sent to Firebase Analytics.</p>
 
 <h2>3. Third-party services</h2>
+
+<h3>Firebase Analytics (App Usage)</h3>
+<p>Hushly uses Google Analytics for Firebase to measure app usage and investigate errors. The app sends events when it opens, when a sound starts or stops, when a timer completes, when an ad is shown, and when an app error is recorded. Event details may include a sound ID and collection, playback or timer duration, ad format, and a short error description or context. Firebase Analytics also collects basic app-usage and device information automatically, including an app-instance identifier. This information is transmitted to Google for analytics; it is not limited to the device. We do not intentionally send names or email addresses in these events. See <a href="https://policies.google.com/privacy" rel="noopener">Google&rsquo;s privacy policy</a>.</p>
 
 <h3>Google AdMob (Advertising)</h3>
 <p>Hushly displays ads through Google AdMob. AdMob may collect:</p>
@@ -74,12 +77,13 @@
   <li>Approximate (non-precise) location derived from IP</li>
   <li>Device information (model, OS version, language)</li>
   <li>Ad interaction data</li>
+  <li>Diagnostic and app interaction information</li>
 </ul>
 <p>AdMob uses this information to serve and measure ads. See Google&rsquo;s policy at <a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a>.</p>
 <p>For users in the European Economic Area (EEA), UK, and Switzerland, Hushly requests consent for personalized advertising via Google&rsquo;s User Messaging Platform (UMP) before AdMob is initialized.</p>
 <p>Hushly configures AdMob requests with:</p>
 <ul>
-  <li><code>tagForChildDirectedTreatment</code> = false (app is not directed at children)</li>
+  <li><code>tagForChildDirectedTreatment</code> = unspecified (the app targets ages 13 and older)</li>
   <li><code>maxAdContentRating</code> = G (family-safe ad content only)</li>
 </ul>
 
@@ -89,8 +93,8 @@
 <h2>4. User rights</h2>
 <ul>
   <li>You can reset your Advertising ID or opt out of personalized ads from <em>Android Settings &rarr; Google &rarr; Ads</em>.</li>
-  <li>EEA / UK / Swiss users can re-open the consent form at any time by reinstalling the app.</li>
-  <li>To remove all locally stored data, uninstall Hushly.</li>
+  <li>For EEA / UK / Swiss users, the advertising consent form is shown when Google determines it is required. The app does not currently provide a control to reopen it. This form concerns advertising; it does not control Firebase Analytics collection.</li>
+  <li>To remove locally stored preferences, uninstall Hushly. Uninstalling does not by itself erase analytics or advertising data already sent to Google. For questions or a data deletion request, email us at the contact address below; we will review the request and available Google data controls. This app has no account-based deletion feature.</li>
 </ul>
 
 <h2>5. Children</h2>
