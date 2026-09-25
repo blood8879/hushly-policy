@@ -48,27 +48,30 @@
 <main>
 <header>
   <h1>Hushly Privacy Policy</h1>
-  <div class="muted">Last updated: 2026-09-23</div>
+  <div class="muted">Last updated: 2026-09-25</div>
 </header>
 
-<p>Hushly (&ldquo;we&rdquo;, &ldquo;our&rdquo;) is a free Android application offering sleep and focus sounds. This policy explains what data the app collects and how it is used.</p>
+<p>Hushly (&ldquo;we&rdquo;, &ldquo;our&rdquo;) is a free Android application offering sleep and focus sounds, with an optional paid upgrade (Hushly Plus). This policy explains what data the app collects and how it is used.</p>
 
 <h2>1. Audience</h2>
 <p>Hushly is intended for users 13 years of age or older (parents and adults). It is <strong>not</strong> directed at children under 13. Although the app includes lullaby sounds parents may play for their children, the app itself is operated by an adult user.</p>
 
 <h2>2. Data the app collects directly</h2>
-<p>Hushly does not ask you to create an account or provide a name, email address, or payment information. We do not operate a server that stores your listening history. The third-party services below receive app and device data.</p>
+<p>Hushly does not ask you to create an account or provide a name or email address. Payment for Hushly Plus is handled by Google Play (see below). We do not operate a server that stores your listening history. The third-party services below receive app and device data.</p>
 <p>The following data is stored only on the user&rsquo;s device via Android SharedPreferences:</p>
 <ul>
   <li>Favorite and recently-played sound IDs</li>
   <li>Onboarding completion flag</li>
+  <li>Sleep log (start/end times and sound IDs of Sleep and Twins sessions)</li>
+  <li>Saved Twins mixes</li>
+  <li>Whether Hushly Plus is active, the expiry time of an ad-free pass, and an app-launch counter</li>
 </ul>
 <p>These local preferences are not sent by Hushly to our server and are deleted when the app is uninstalled. Playback events described below are separately sent to Firebase Analytics.</p>
 
 <h2>3. Third-party services</h2>
 
 <h3>Firebase Analytics (App Usage)</h3>
-<p>Hushly uses Google Analytics for Firebase to measure app usage and investigate errors. The app sends events when it opens, when a sound starts or stops, when a timer completes, when an ad is shown, and when an app error is recorded. Event details may include a sound ID and collection, playback or timer duration, ad format, and a short error description or context. Firebase Analytics also collects basic app-usage and device information automatically, including an app-instance identifier. This information is transmitted to Google for analytics; it is not limited to the device. We do not intentionally send names or email addresses in these events. See <a href="https://policies.google.com/privacy" rel="noopener">Google&rsquo;s privacy policy</a>.</p>
+<p>Hushly uses Google Analytics for Firebase to measure app usage and investigate errors. The app sends events when it opens, when a sound starts or stops, when a timer completes, when an ad is shown (including the estimated ad revenue AdMob reports for that impression), when the Hushly Plus screen is viewed, when a purchase starts, completes, or fails, when a rewarded ad is offered or earned, and when an app error is recorded. Event details may include a sound ID and collection, playback or timer duration, ad format and revenue value, product ID and entry point, and a short error description or context. Sleep log contents are not sent. Firebase Analytics also collects basic app-usage and device information automatically, including an app-instance identifier. This information is transmitted to Google for analytics; it is not limited to the device. We do not intentionally send names or email addresses in these events. See <a href="https://policies.google.com/privacy" rel="noopener">Google&rsquo;s privacy policy</a>.</p>
 
 <h3>Google AdMob (Advertising)</h3>
 <p>Hushly displays ads through Google AdMob. AdMob may collect:</p>
@@ -84,8 +87,14 @@
 <p>Hushly configures AdMob requests with:</p>
 <ul>
   <li><code>tagForChildDirectedTreatment</code> = unspecified (the app targets ages 13 and older)</li>
-  <li><code>maxAdContentRating</code> = G (family-safe ad content only)</li>
+  <li><code>maxAdContentRating</code> = G by default (family-safe ad content only)</li>
 </ul>
+
+<h3>Google Play Billing (Hushly Plus)</h3>
+<p>Hushly Plus is an optional paid upgrade sold through Google Play. Payments are processed entirely by Google Play; Hushly never receives your card or other payment details. To check whether Plus is active, the app asks Google Play on your device which Hushly products your Google account owns and stores a yes/no flag locally. Purchase events (product ID, entry point, success or failure) are sent to Firebase Analytics as described above. See <a href="https://play.google.com/about/play-terms/" rel="noopener">Google Play&rsquo;s terms</a>.</p>
+
+<h3>Firebase Remote Config</h3>
+<p>Hushly downloads configuration values from Firebase Remote Config (for example, how often ads may appear and quiet-hour settings). Firebase uses the app-instance identifier to deliver these values and may use it for A/B experiments.</p>
 
 <h3>Google Mobile Services</h3>
 <p>AdMob relies on Google Play services, which may collect diagnostic data per Google&rsquo;s privacy policy linked above.</p>
